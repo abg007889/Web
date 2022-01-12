@@ -75,19 +75,19 @@ height:100%;
 <script>
 function switchPage(page)
 {
-	//$.ajax({
-	//url:page+'.html',
-	//type:'POST',
-	//success:function(result)
-	//	{
-	//		//for testing
-	//		console.log(result);
-	//		document.getElementById('showbody').innerhtml = result; 
-	//	}
-	//});
-	 $(function(){
-      $("#showbody").load(page+".html"); 
-    });
+	$.ajax({
+	url:page+'.html',
+	type:'POST',
+	success:function(result)
+		{
+			//for testing
+			console.log(result);
+			document.getElementById('showbody').innerhtml = result; 
+		}
+	});
+// 	 $(function(){
+//       $("#showbody").load(page+".html"); 
+//     });
 }
 </script>
 </html>
